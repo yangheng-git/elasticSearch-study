@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    #内存模式
+    url: jdbc:h2:mem:test
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+
+  thymeleaf:
+    cache: true
+
+  redis:
+    database: 0
+    host: 132.232.33.80
+    password: root@redis
+    port: 6379
+    pool:
+      min-idle: 1
+    timeout: 3000
+
+  session:
+    store-type: hash_map
+
+

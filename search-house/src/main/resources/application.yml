@@ -1,0 +1,26 @@
+server:
+  port: 7777
+  #关闭whitelabel 【自定义异常展示页面】
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  profiles:
+    active: dev
+
+  #jpa config
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  #thymeleaf模板
+  thymeleaf:
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+
+#关闭http基本验证
+security:
+  basic:
+    enabled: false
