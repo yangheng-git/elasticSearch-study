@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by 瓦力.
  */
 @Entity
 @Table(name = "house_detail")
