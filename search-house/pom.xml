@@ -77,6 +77,20 @@
             <artifactId>thymeleaf-extras-springsecurity4</artifactId>
             <version>${thymeleaf-extras-springsecurity4.version}</version>
         </dependency>
+
+        <!-- redis session依赖 -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+
+
         <!-- ModelMapper Simple, Intelligent, Object Mapping. -->
         <dependency>
             <groupId>org.modelmapper</groupId>
